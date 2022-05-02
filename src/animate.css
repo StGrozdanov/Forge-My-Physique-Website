@@ -1,0 +1,44 @@
+.slideFadeInUp {
+    animation-name: slideFadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: .55s;
+}
+
+@keyframes slideFadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.animateAfter500 {
+    animation-delay: 0.5s;
+}
+
+.animateAfter800 {
+    animation-delay: 0.8s;
+}
+
+.animateAfter1100 {
+    animation-delay: 1.1s;
+}
+
+.animateAfter1400 {
+    animation-delay: 1.4s;
+}
+
+.animateAfter1700 {
+    animation-delay: 1.7s;
+}
+
+.animateAfter2000 {
+    animation-delay: 2s;
+}
