@@ -17,7 +17,7 @@ export default function Header() {
                         No limitations, no compromise both in quality and accessibility.
                     </p>
                 </article>
-                <article>
+                <article className='site-header-section-img-container'>
                     <img className='site-header-section-img' src="/assets/pictures/header-img.png" alt="" />
                 </article>
             </section>

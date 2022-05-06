@@ -8,8 +8,8 @@
 
 .site-header-section {
     display: flex;
-    margin: 0 180px;
     align-items: center;
+    justify-content: center;
 }
 
 .site-header-section-img:hover {
@@ -31,7 +31,8 @@
     margin-right: 50px;
 }
 
-.site-header-section-description h1, h3 {
+.site-header-section-description h1,
+h3 {
     color: #000248;
     margin: 12px 0;
 }
@@ -44,4 +45,130 @@
     font-size: 28px;
     font-weight: 400;
     font-style: italic;
+}
+
+@media all and (min-width: 1900px) {
+    .site-header {
+        padding: 0;
+    }
+
+    .site-header-section {
+        height: 80%;
+    }
+
+    .site-header-section-description p {
+        font-size: 32px;
+    }
+    
+    .site-header-section-description h1 {
+        font-size: 40px;
+    }
+    
+    .site-header-section-description h3 {
+        font-size: 36px;
+    }
+}
+
+@media all and (max-width: 1330px) {
+    .site-header-section-description p {
+        font-size: 16px;
+    }
+    
+    .site-header-section-description h1 {
+        font-size: 22px;
+    }
+    
+    .site-header-section-description h3 {
+        font-size: 18px;
+    }
+
+    .site-header-section-img {
+        width: 100%;
+    }
+
+    .site-header-section-img-container {
+        width: 22%;
+    }
+}
+
+@media all and (max-width: 885px) {
+    .site-header-section-description p {
+        font-size: 14px;
+    }
+    
+    .site-header-section-description h1 {
+        font-size: 18px;
+    }
+    
+    .site-header-section-description h3 {
+        font-size: 16px;
+    }
+
+    .site-header-section-img-container {
+        width: 26%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .site-header-section {
+        padding: 30px;
+    }
+
+    .site-header-section-img-container {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .site-header-section-img-container {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .site-header-section-img-container {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .site-header-section-description p {
+        font-size: 13px;
+    }
+    
+    .site-header-section-description h1 {
+        font-size: 16px;
+    }
+    
+    .site-header-section-description h3 {
+        font-size: 14px;
+    }
+
+    .site-header-section-img-container {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .site-header {
+        padding-top: 20px;
+    }
+
+    .site-header-section {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .site-header-section-description {
+        text-align: center;
+    }
+
+    .site-header-section-description p {
+        margin: 20px;
+    }
+
+    .site-header-section-img-container {
+        margin-top: 10px;
+        width: 55%;
+    }
 }
