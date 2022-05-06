@@ -18,5 +18,10 @@
 @media all and (max-width: 680px) {
     .features-article p {
         padding: 0 20px;
+        font-size: 13px;
+    }
+
+    .features-article h2 {
+        font-size: 16px;
     }
 }
