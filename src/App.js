@@ -2,8 +2,11 @@ import Navigation from './components/Navigation/Navigation';
 import Header from './components/Header/Header';
 import Features from './components/Features/Features';
 import Countdown from './components/Countdown/Countdown';
-import { calculateTargetDate } from './helpers/calculateTargetDate'
 import Gallery from './components/Gallery/Gallery';
+import Footer from './components/Footer/Footer';
+import BackToTop from './components/BackToTop/BackToTop';
+
+import { calculateTargetDate } from './helpers/calculateTargetDate'
 
 const APP_RELEASE_AFTER_DAYS = 32;
 
@@ -17,6 +20,8 @@ function App() {
       <Features />
       <Countdown targetDate={date} />
       <Gallery />
+      <BackToTop />
+      <Footer />
     </>
   );
 }
