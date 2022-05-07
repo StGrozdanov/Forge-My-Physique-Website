@@ -1,4 +1,5 @@
 import './Footer.css';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Footer() {
     return (
@@ -6,20 +7,29 @@ export default function Footer() {
             <article className="site-footer-contacts">
                 <ul>
                     <li>
-                        <i className="fa-solid fa-envelope"></i>
+                        <AnimationOnScroll animateIn='fadeInUp' delay={200} offset={40}>
+                            <a href='mailto:st.grozdanov.developer@gmail.com'>
+                                <i className="fa-solid fa-envelope"></i>
+                            </a>
+                        </AnimationOnScroll>
                     </li>
                     <li>
-                        <i className="fa fa-linkedin"></i>
+                        <AnimationOnScroll animateIn='fadeInUp' delay={300} offset={40}>
+                            <a href="https://www.linkedin.com/in/stoyan-grozdanov-533b4b1bb" target="blank">
+                                <i className="fa fa-linkedin"></i>
+                            </a>
+                        </AnimationOnScroll>
                     </li>
-                    <li>
-                        <i className="fa fa-github"></i>
-                    </li>
+                    <AnimationOnScroll animateIn='fadeInUp' delay={400} offset={40}>
+                        <a href="https://github.com/StGrozdanov" target="blank">
+                            <i className="fa fa-github"></i>
+                        </a>
+                    </AnimationOnScroll>
                 </ul>
             </article>
             <article className="site-footer-rights">
                 All Rights Reserved. © 2022 Forge My Physique
             </article>
         </footer>
-
     );
 }

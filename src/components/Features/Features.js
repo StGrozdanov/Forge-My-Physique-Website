@@ -20,7 +20,7 @@ export default function Features() {
                 </p>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn='slideFadeInUp' delay={800} animateOnce={true}>
+            <AnimationOnScroll animateIn='slideFadeInUp' delay={600} animateOnce={true}>
                 <p>
                     You want to cut, maintain or gain weight? We will handle that for you. Calculating your calories is
                     easy work. Providing your gender and base physique stats is all we need. You will gain access to
@@ -31,7 +31,7 @@ export default function Features() {
                 </p>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn='slideFadeInUp' delay={1500} animateOnce={true}>
+            <AnimationOnScroll animateIn='slideFadeInUp' delay={900} animateOnce={true}>
                 <p>
                     Training for some time but not sure if you really have progress on your physique? Our training
                     effectiveness algoritms will have you covered. You can track your muscle load progress after every
