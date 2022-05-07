@@ -12,7 +12,7 @@
 
 .site-footer-contacts ul li i {
     margin-right: 20px;
-    font-size: 22px;
+    font-size: 23px;
     color: #000248a8;
 }
 
@@ -22,3 +22,13 @@
     font-style: italic;
     color: #757589;
 }   
+
+@media all and (min-width: 1800px) {
+    .site-footer-contacts ul li i {
+        font-size: 45px;
+    }
+
+    .site-footer-rights {
+        font-size: 30px;
+    } 
+}
