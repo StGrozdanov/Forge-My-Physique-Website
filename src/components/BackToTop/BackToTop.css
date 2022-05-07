@@ -13,18 +13,14 @@
     z-index: 1;
 }
 
-.fa-solid .fa-sort-up {
-    margin: 0;
-    color: #fff;
-    opacity: .6;
-    font-size: 28px;
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@media all and (min-width: 1800px) {
+    .button-to-top {
+        padding: 24px 26px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .button-to-top {
+        right: 20px;
+    }
 }
