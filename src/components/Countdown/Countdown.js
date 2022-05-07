@@ -14,10 +14,10 @@ export default function Countdown({ targetDate }) {
     return (
         <article className="counter">
             <h3>Official Beta Release</h3>
-            <TimeLeft value={days} unit={'Days'} isCloseToRelease={days <= 3} />
-            <TimeLeft value={hours} unit={'Hours'} isCloseToRelease={days === 0} />
-            <TimeLeft value={minutes} unit={'Minutes'} isCloseToRelease={false} />
-            <TimeLeft value={seconds} unit={'Seconds'} isCloseToRelease={false} />
+            <TimeLeft value={days} unit={'Days'} isCloseToRelease={days <= 3 && days !== 0} />
+            <TimeLeft value={hours} unit={'Hours'} isCloseToRelease={days === 0 && hours !== 0} />
+            <TimeLeft value={minutes} unit={'Minutes'} isCloseToRelease={hours === 0 && minutes !== 0} />
+            <TimeLeft value={seconds} unit={'Seconds'} isCloseToRelease={minutes === 0 && seconds !== 0} />
         </article>
     );
 };
