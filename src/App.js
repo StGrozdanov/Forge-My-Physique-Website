@@ -5,7 +5,7 @@ import Countdown from './components/Countdown/Countdown';
 import { calculateTargetDate } from './helpers/calculateTargetDate'
 import Gallery from './components/Gallery/Gallery';
 
-const APP_RELEASE_AFTER_DAYS = 31;
+const APP_RELEASE_AFTER_DAYS = 32;
 
 function App() {
   const date = calculateTargetDate(APP_RELEASE_AFTER_DAYS);

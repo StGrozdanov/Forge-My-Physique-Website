@@ -1,0 +1,30 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.image-gallery-play-button {
+    left: 18%;
+}
+
+.image-gallery-fullscreen-button {
+    right: 18%;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+    max-height: calc(90vh - 80px);
+}
+
+@media all and (min-width: 1400px) {
+    .image-gallery {
+        padding: 2% 5%;
+    }
+}
+
+.gallery-heading {
+    font-size: 30px;
+    text-align: center;
+}
+
+@media all and (max-width: 650px) {
+    .gallery-heading {
+        font-size: 16px;
+    }
+}
