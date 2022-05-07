@@ -1,9 +1,17 @@
 import './BackToTop.css';
+import { Link } from 'react-scroll/modules';
 
 export default function BackToTop() {
     return (
-        <a href="#" id="scrollToTop" className="button-to-top" style={{ display: "block" }}>
+        <Link
+            to='site-nav'
+            smooth={true}
+            duration={1000}
+            activeClass='hidden'
+            spy={true}
+            className='button-to-top'
+        >
             <i className="fa-solid fa-angle-up"></i>
-        </a>
+        </Link>
     );
 }

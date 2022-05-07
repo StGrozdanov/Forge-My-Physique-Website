@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import './Navigation.css';
+import { useState } from 'react';
+import { Link } from 'react-scroll/modules';
 
 export default function Navigation() {
     let [navIsExpanded, setNavIsExpanded] = useState(false);
@@ -13,7 +14,7 @@ export default function Navigation() {
     }
 
     return (
-        <nav className='site-header-navigation'>
+        <nav id='site-nav' className='site-header-navigation'>
             <a className='header-logo' href="#">
                 <img src="/assets/pictures/forge.png" alt="" />
                 Forge My Physique
@@ -30,7 +31,14 @@ export default function Navigation() {
                     <a href='#'>Main Features</a>
                 </li>
                 <li>
-                    <a href='#'>Download</a>
+                    <Link
+                        to='countdown'
+                        smooth={true}
+                        duration={1400}
+                        activeClass='active'
+                        spy={true}
+                        className='scroll-link'
+                    >Download</Link>
                 </li>
                 <li>
                     <a href='#'>Contact Us</a>

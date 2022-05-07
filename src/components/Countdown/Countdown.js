@@ -12,7 +12,7 @@ export default function Countdown({ targetDate }) {
     }
 
     return (
-        <article className="counter">
+        <article id='countdown' className="counter">
             <h3>Official Beta Release</h3>
             <TimeLeft value={days} unit={'Days'} isCloseToRelease={days <= 3 && days !== 0} />
             <TimeLeft value={hours} unit={'Hours'} isCloseToRelease={days === 0 && hours !== 0} />

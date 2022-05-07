@@ -80,6 +80,10 @@
     margin-right: 65px;
 }
 
+.scroll-link {
+    cursor: pointer;
+}
+
 @media all and (min-width: 1900px) {
     .site-header-navigation {
         height: 150px;
