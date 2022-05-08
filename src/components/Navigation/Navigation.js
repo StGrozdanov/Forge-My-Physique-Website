@@ -1,9 +1,11 @@
 import './Navigation.css';
 import { useState } from 'react';
 import { Link } from 'react-scroll/modules';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export default function Navigation() {
     let [navIsExpanded, setNavIsExpanded] = useState(false);
+    const navigate = useNavigate();
 
     function navExpandHandler() {
         if (navIsExpanded) {
@@ -15,24 +17,25 @@ export default function Navigation() {
 
     return (
         <nav id='site-nav' className='site-header-navigation'>
-            <a className='header-logo' href="#">
+            <NavLink to='/' className='header-logo'>
                 <img src="/assets/pictures/forge.png" alt="" />
                 Forge My Physique
-            </a>
+            </NavLink>
             <button className='nav-dropdown-btn' onClick={navExpandHandler}>
                 <i style={navIsExpanded ? { display: 'none' } : { display: '' }} className="fa-solid fa-bars"></i>
                 <i style={navIsExpanded ? { display: 'flex' } : { display: 'none' }} className="fa-solid fa-xmark"></i>
             </button>
             <ul style={navIsExpanded ? { display: 'flex' } : { display: '' }} className='nav-ul'>
                 <li>
-                    <a href='#' className='active'>About the app</a>
+                    <NavLink to='/' >About the app</NavLink>
                 </li>
                 <li>
-                    <a href='#'>Main Features</a>
+                    <NavLink to='/features' >Main Features</NavLink>
                 </li>
                 <li>
                     <Link
                         to='countdown'
+                        alt=''
                         smooth={true}
                         duration={1400}
                         activeClass='active'
@@ -41,10 +44,10 @@ export default function Navigation() {
                     >Download</Link>
                 </li>
                 <li>
-                    <a href='#'>Contact Us</a>
+                    <NavLink to='/contacts'>Contact Us</NavLink>
                 </li>
                 <li>
-                    <a href='#'>Live Demo</a>
+                    <NavLink to='/demo'>Live Demo</NavLink>
                 </li>
             </ul>
         </nav>
