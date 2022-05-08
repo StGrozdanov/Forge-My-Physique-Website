@@ -12,6 +12,11 @@
     z-index: 1;
 }
 
+.button-to-top:hover {
+    background-color: #234465;
+    transition: background .3s ease-in-out;
+}
+
 .hidden {
     display: none;
 }

@@ -190,7 +190,7 @@
     }
 
     .header-logo img {
-        width: 6%;
+        width: 9%;
     }
 
     .site-header-navigation {
@@ -200,6 +200,6 @@
 
 @media all and (max-width: 450px) {
     .header-logo img {
-        width: 9%;
+        width: 9.5%;
     }
 }
