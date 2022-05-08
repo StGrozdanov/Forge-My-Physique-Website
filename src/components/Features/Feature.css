@@ -3,6 +3,7 @@
     max-width: 33vw;
     align-items: center;
     font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
 }
 
 .left {

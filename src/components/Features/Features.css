@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
 
+.features-section {
+    overflow: hidden;
+}
+
 .features-section-header {
     display: flex;
     flex-direction: column;

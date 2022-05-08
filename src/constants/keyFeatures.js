@@ -5,6 +5,7 @@ const FORGE_TRACKER = {
   description: 'Track your body measurements, your exercises, your food, gain access to personal physique diary, ' +
     'forged of progress pictures and timestamps of your different training periods. No more questioning of your ' +
     'physique progress.',
+  animationDelay: '0s',
 }
 
 const FORGE_LABORATORY = {
@@ -14,6 +15,7 @@ const FORGE_LABORATORY = {
   description: 'Gain access to progress charts - daily, monthly and yearly of your body measurements, exercise scores, ' +
     'the forge algoritms will calculate your muscle load and optimal exercise load for efficient progress. Compare your ' +
     'exercise / physique achievements against your different training periods or directly against your friends.',
+  animationDelay: '0s',
 }
 
 const FORGE_INN = {
@@ -24,6 +26,7 @@ const FORGE_INN = {
     'your physical stats, gender and weight targets. You do not need to be strict with your calories on a daily basis ' +
     'our caloric calculation algoritms give you freedom to be flexible with your diet, overeating for a day or two? ' +
     'Not an issue anymore.',
+  animationDelay: '0s',
 }
 
 const FORGE_BODY_COMPOSITION = {
@@ -33,6 +36,7 @@ const FORGE_BODY_COMPOSITION = {
   description: 'We can estimate your bodyfat percentage, providing you different methods - you don\'t need calipers for it ' +
     'We will ask for your physical stats and after a few questions we will estimate if the digit is actual to your ' +
     'current physique, if not we will provide a second method to come as close as possible to reallity.',
+  animationDelay: '0s',
 }
 
 const FORGE_BODY_SCALE = {
@@ -40,8 +44,9 @@ const FORGE_BODY_SCALE = {
   position: 'right',
   title: 'The Forge Body Scale',
   description: 'Did you ever wondered what is your perfect weight? We will estimate it for you, depending on your ' +
-  'physique structure goals. You gain access to weight management charts that will help us adjust your calorie ' + 
-  'and macro intakes realtime, depending on your physique and exercise results.'
+    'physique structure goals. You gain access to weight management charts that will help us adjust your calorie ' +
+    'and macro intakes realtime, depending on your physique and exercise results.',
+  animationDelay: '0s',
 }
 
 const FORGE_RANKLIST = {
@@ -49,9 +54,10 @@ const FORGE_RANKLIST = {
   position: 'right',
   title: 'The Forge Ranking',
   description: 'Is your physique average? Are you out of shape or is it perfect? Is it record breaking? You won\'t wonder ' +
-  'anymore. And no, we won\'t compare you to mr/ms Olympia to find out. At least not if you want to. In our forge everything ' +
-  'is about you. It will depend on your height and structure. The rank system calculates your physique score and ranks you ' +
-  'according to your perfect physique measurements.'
+    'anymore. And no, we won\'t compare you to mr/ms Olympia to find out. At least not if you want to. In our forge everything ' +
+    'is about you. It will depend on your height and structure. The rank system calculates your physique score and ranks you ' +
+    'according to your perfect physique measurements.',
+  animationDelay: '0s',
 }
 
 const keyFeatures = {

@@ -1,8 +1,11 @@
 import './Feature.css';
 
-export default function Feature({ iconClass, position, title, description }) {
+export default function Feature({ iconClass, position, title, description, animationDelay }) {
     return (
-        <article className="feature">
+        <article
+            className={position == 'left' ? 'fadeInLeft ' + 'feature' : 'fadeInRight ' + 'feature'}
+            style={{ animationDelay: animationDelay }}
+        >
             <header className={'feature-header ' + position}>
                 <i className={iconClass}></i>
             </header>
