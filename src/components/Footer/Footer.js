@@ -9,7 +9,7 @@ export default function Footer() {
                     <li>
                         <AnimationOnScroll animateIn='fadeInUp' delay={200} offset={40}>
                             <a href='mailto:st.grozdanov.developer@gmail.com'>
-                                <i className="fa-solid fa-envelope"></i>
+                                <i className="fa fa-envelope"></i>
                             </a>
                         </AnimationOnScroll>
                     </li>
@@ -21,9 +21,11 @@ export default function Footer() {
                         </AnimationOnScroll>
                     </li>
                     <AnimationOnScroll animateIn='fadeInUp' delay={400} offset={40}>
-                        <a href="https://github.com/StGrozdanov" target="blank">
-                            <i className="fa fa-github"></i>
-                        </a>
+                        <li>
+                            <a href="https://github.com/StGrozdanov" target="blank">
+                                <i className="fa fa-github"></i>
+                            </a>
+                        </li>
                     </AnimationOnScroll>
                 </ul>
             </article>
