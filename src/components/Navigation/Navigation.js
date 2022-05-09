@@ -1,11 +1,10 @@
 import './Navigation.css';
 import { useState } from 'react';
 import { Link } from 'react-scroll/modules';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
     let [navIsExpanded, setNavIsExpanded] = useState(false);
-    const navigate = useNavigate();
 
     function navExpandHandler() {
         if (navIsExpanded) {
@@ -25,7 +24,7 @@ export default function Navigation() {
                 <i style={navIsExpanded ? { display: 'none' } : { display: '' }} className="fa-solid fa-bars"></i>
                 <i style={navIsExpanded ? { display: 'flex' } : { display: 'none' }} className="fa-solid fa-xmark"></i>
             </button>
-            <ul style={navIsExpanded ? { display: 'flex' } : { display: '' }} className='nav-ul'>
+            <ul style={navIsExpanded ? { display: 'flex' } : { display: '' }} className='nav-ul' onClick={navExpandHandler}>
                 <li>
                     <NavLink to='/' >About the app</NavLink>
                 </li>
