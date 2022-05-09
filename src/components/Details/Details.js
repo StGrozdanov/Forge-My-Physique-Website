@@ -31,7 +31,7 @@ export default function Details() {
                 </p>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn='slideFadeInUp' delay={900} animateOnce={true}>
+            <AnimationOnScroll animateIn='slideFadeInUp' delay={600} animateOnce={true}>
                 <p>
                     Training for some time but not sure if you really have progress on your physique? Our training
                     effectiveness algoritms will have you covered. You can track your muscle load progress after every
