@@ -10,9 +10,8 @@ export default function Features() {
                 <h2>FEATURES O<span className='features-forge-heading'>F OUR FORGE</span></h2>
                 <p className='features-header-paragraph'>
                     Our application features are innovative and market defining. They all forge into a single plan that
-                    is personalised for each user, for each gender, for each body composition. It's flexible, easy to
-                    follow and provide advanced features of witch can benefit both professionals and average people that
-                    enjoy training.
+                    is personalised for each user, for each gender, for each body composition. It's flexible, easy to follow 
+                    and provides advanced features of which both professionals and beginners can bennefit from.
                 </p>
             </header>
             <main className='features-main-section'>
