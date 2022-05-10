@@ -96,6 +96,7 @@
 @media all and (max-width: 1024px) {
     .feature {
         max-width: 45vw;
+        flex-direction: row;
     }
 
     .left {
@@ -107,12 +108,14 @@
     }
 
     .feature-header {
-        margin-top: 20px;
+        align-self: flex-start;
+        margin-top: 18px;
     }
 
     .feature-header .fa {
-        font-size: 28px;
-        padding: 26px 27px;
+        background: #7e71d6;
+        font-size: 20px;
+        padding: 12px 13px;
         margin: 0;
     }
 }
@@ -120,12 +123,6 @@
 @media all and (max-width: 770px) {
     .feature {
         max-width: 50vw;
-    }
-
-    .feature-header .fa {
-        font-size: 22px;
-        padding: 22px 23px;
-        margin: 0;
     }
 }
 
@@ -135,8 +132,6 @@
     }
 
     .feature-header .fa {
-        font-size: 20px;
-        padding: 18px 19px;
         margin: 0;
     }
 }
