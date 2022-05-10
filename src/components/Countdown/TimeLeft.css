@@ -142,7 +142,31 @@
   margin: auto;
 }
 
-@media all and (min-width: 1800px) {
+@media all and (min-width: 1500px) {
+  .countdown {
+    width: 29vw;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  .countdown {
+    width: 29vw;
+  }
+}
+
+@media all and (min-width: 1700px) {
+  .countdown {
+    width: 25vw;
+  }
+}
+
+@media all and (min-width: 1900px) {
+  .countdown {
+    width: 23vw;
+  }
+}
+
+@media all and (min-width: 2200px) {
   .countdown {
     width: 30vw;
     margin: 0 auto;

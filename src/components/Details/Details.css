@@ -15,14 +15,24 @@
     font-weight: 700;
 }
 
-@media all and (min-width: 2000px) {
+@media all and (min-width: 1700px) {
     .features-article p {
-        padding: 0 450px;
-        font-size: 23px;
+        font-size: 19px;
     }
 
     .features-article h2 {
         font-size: 32px;
+    }
+}
+
+@media all and (min-width: 2000px) {
+    .features-article p {
+        padding: 0 400px;
+        font-size: 26px;
+    }
+
+    .features-article h2 {
+        font-size: 37px;
     }
 }
 
