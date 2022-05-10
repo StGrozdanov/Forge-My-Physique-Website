@@ -205,11 +205,11 @@
     }
 
     .nav-ul {
-        top: 8%;
+        top: 5.5%;
     }
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 380px) {
     .nav-ul {
         top: 7%;
     }
