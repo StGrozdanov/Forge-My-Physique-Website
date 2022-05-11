@@ -10,15 +10,37 @@
     -moz-border-radius: 50%;
     border-radius: 50%;
     z-index: 1;
+    animation: movebtn 3s ease-in-out;
+    animation-duration: 1s;
+    transition: all 0.5s ease-in-out;
 }
 
 .button-to-top:hover {
     background-color: #234465;
     transition: background .3s ease-in-out;
+    animation: none;
 }
 
 .hidden {
     display: none;
+}
+
+@keyframes movebtn {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(5px);
+    }
 }
 
 @media all and (min-width: 1800px) {
