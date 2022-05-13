@@ -3,10 +3,8 @@ import { useState } from 'react';
 import { Link } from 'react-scroll/modules';
 import { NavLink } from 'react-router-dom';
 import ModalDialogue from '../Common/ModalDialogue/ModalDialogue';
-import contactForm from '../../constants/modalContent/contactForm';
-import loginForm from '../../constants/modalContent/loginForm';
-import registerForm from '../../constants/modalContent/registerForm';
-
+import CONTACT_FORM from '../../constants/modalContent/contactForm';
+import LOGIN_FORM from '../../constants/modalContent/loginForm';
 
 export default function Navigation() {
     let [navIsExpanded, setNavIsExpanded] = useState(false);
@@ -14,7 +12,7 @@ export default function Navigation() {
     let [modalContent, setModalContent] = useState({});
 
     function popUpHandler(e) {
-        e.target.textContent == 'Contact Us' ? setModalContent(contactForm) : setModalContent(loginForm);
+        e.target.textContent == 'Contact Us' ? setModalContent(CONTACT_FORM) : setModalContent(LOGIN_FORM);
         showModal ? setShowModal(false) : setShowModal(true);
     }
 
@@ -28,7 +26,7 @@ export default function Navigation() {
 
     return (
         <>
-            {showModal ? <ModalDialogue form={modalContent} setModalView={setShowModal} /> : null}
+            {showModal ? <ModalDialogue content={modalContent} setModalView={setShowModal} /> : null}
             <nav id='site-nav' className='site-header-navigation'>
                 <NavLink to='/' className='header-logo'>
                     <img src="/assets/pictures/forge.png" alt="" />
@@ -58,7 +56,7 @@ export default function Navigation() {
                     </li>
                     <li>
                         <a
-                            className={showModal && modalContent === contactForm ? 'active' : null}
+                            className={showModal && modalContent === CONTACT_FORM ? 'active' : null}
                             onClick={popUpHandler}
                             href='#contacts'
                         >
@@ -67,7 +65,7 @@ export default function Navigation() {
                     </li>
                     <li>
                         <a
-                            className={showModal && modalContent === loginForm ? 'active' : null}
+                            className={showModal && modalContent === LOGIN_FORM ? 'active' : null}
                             onClick={popUpHandler}
                             href='#demo'
                         >

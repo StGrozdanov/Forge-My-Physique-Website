@@ -1,4 +1,4 @@
-const loginForm = {
+const LOGIN_FORM = {
     title: 'Login Form',
     fields: [
         { placeHolder: 'Username' },
@@ -7,4 +7,4 @@ const loginForm = {
     button: 'Login'
 }
 
-export default loginForm;
+export default LOGIN_FORM;

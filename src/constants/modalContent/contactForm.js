@@ -1,4 +1,4 @@
-const contactForm = {
+const CONTACT_FORM = {
     title: 'Contact Us',
     fields: [
         { placeHolder: 'Your name' },
@@ -8,4 +8,4 @@ const contactForm = {
     button: 'Send Message'
 }
 
-export default contactForm;
+export default CONTACT_FORM;

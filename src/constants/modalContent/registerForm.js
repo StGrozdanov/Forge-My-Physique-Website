@@ -1,4 +1,4 @@
-const registerForm = {
+const REGISTER_FORM = {
     title: 'Register Form',
     fields: [
         { placeHolder: 'Username' },
@@ -9,4 +9,4 @@ const registerForm = {
     button: 'Register'
 }
 
-export default registerForm;
+export default REGISTER_FORM;
