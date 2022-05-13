@@ -1,0 +1,53 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 40vw;
+    padding: 20px;
+    border: 1px solid #6f42c1;
+    border-radius: 4%;
+    z-index: 4;
+    background: #7e71d6;
+    color: white;
+    -webkit-animation: slit .8s forwards ease-out;
+    -moz-animation: slit .8s forwards ease-out;
+    animation: slit .8s forwards ease-out;
+    box-shadow: 0 0 8px 8px rgb(0 0 0 / 20%), 12px 12px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.modal-cancel {
+    float: right;
+    cursor: pointer;
+}
+
+@keyframes slit {
+    0% {
+        transform: translate(-40%, -40%) skew(10deg, 40deg) rotateY(30deg);
+        opacity: 1; 
+    }
+
+    50% {
+        transform: translate(-40%, -40%) skew(40deg, 30deg) rotateY(70deg);
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .modal {
+        width: 60vw;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .modal {
+        width: 80vw;
+    }
+}

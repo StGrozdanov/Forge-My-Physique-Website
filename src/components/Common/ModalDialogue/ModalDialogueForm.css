@@ -1,0 +1,39 @@
+.modal-content {
+    padding: 20px;
+}
+
+.modal-input {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid #f0f0f0;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #ffffff; 
+    transition: all 0.4s ease-in-out;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.modal-input::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+.modal-button {
+    padding: 12px 36px;
+    font-size: 18px;
+    width: 100%;
+    border: 0.5px solid white;
+    border-radius: 30px;
+    background: #473d84;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    background: #6559b0;
+    transition: ease-out 0.5s;
+}
