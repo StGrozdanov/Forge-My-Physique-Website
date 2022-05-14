@@ -6,7 +6,7 @@ const REGISTER_FORM = {
         { placeHolder: 'Password' },
         { placeHolder: 'Repeat Password' },
     ],
-    button: 'Register'
+    button: 'Register',
 }
 
 export default REGISTER_FORM;

@@ -4,7 +4,8 @@ const LOGIN_FORM = {
         { placeHolder: 'Username' },
         { placeHolder: 'Password' },
     ],
-    button: 'Login'
+    button: 'Login',
+    footer: 'You don\'t have an account yet? Register instead.',
 }
 
 export default LOGIN_FORM;
