@@ -94,6 +94,7 @@
 @media all and (max-width: 800px) {
     .modal {
         width: 60vw;
+        font-size: 10px;
     }
 }
 
