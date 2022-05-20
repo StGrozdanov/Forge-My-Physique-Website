@@ -116,10 +116,15 @@
 @media all and (max-width: 450px) {
     .modal {
         width: 80vw;
+        height: 50vh;
     }
 }
 
 @media all and (max-width: 380px) {
+    .modal {
+        height: 65vh;
+    }
+
     .modal-footer {
         font-size: 75%;
     }
