@@ -37,3 +37,12 @@
     background: #6559b0;
     transition: ease-out 0.5s;
 }
+
+@media all and (min-width: 2000px) {
+    .modal-input::placeholder {
+        font-size: 80%;
+    }
+    .modal-input, .modal-button {
+        font-size: 110%;
+    }
+}

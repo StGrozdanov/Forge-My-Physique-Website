@@ -91,15 +91,36 @@
     }
 }
 
+@media all and (min-width: 2000px) {
+    .modal {
+        font-size: 200%;
+    }
+
+    .modal-footer, .modal-cancel {
+        font-size: 110%;
+    }
+}
+
+@media all and (max-width: 1530px) {
+    .modal {
+        height: 70vh;
+    }
+}
+
 @media all and (max-width: 800px) {
     .modal {
         width: 60vw;
-        font-size: 10px;
     }
 }
 
 @media all and (max-width: 450px) {
     .modal {
         width: 80vw;
+    }
+}
+
+@media all and (max-width: 380px) {
+    .modal-footer {
+        font-size: 75%;
     }
 }
